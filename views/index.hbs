@@ -1,0 +1,585 @@
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+    {{! favicon }}
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon-180x180.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="assets/favicon/apple-touch-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="assets/favicon/apple-touch-icon-120x120.png"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="assets/favicon/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="assets/favicon/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="assets/favicon/android-chrome-512x512.png"
+    />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    {{! meta keys }}
+    <meta name="keywords" content="torrent" />
+    <meta
+      name="description"
+      content="A simple, straightforward torrent downloading application. It supports both .torrent files and in‑app torrent search. The app is primarily designed for downloading movies, but with .torrent files you can attempt to download other types of content. Keep in mind that non‑movie downloads may not always work smoothly."
+    />
+    <meta name="subject" content="torrent downloader" />
+    <meta name="og:url" content="https://jetstorrent.alwaysdata.net/" />
+    <meta name="og:title" content="jets_torrent" />
+    <meta name="DC.title" content="jets_torrent" />
+    <meta name="author" content="jetstorrent" />
+    <meta
+      name="og:image"
+      content="https://jetstorrent.alwaysdata.net/assets/logos/jets_torrents.png"
+    />
+    <meta
+      name="og:description"
+      content="A simple, straightforward torrent downloading application. It supports both .torrent files and in‑app torrent search. The app is primarily designed for downloading movies, but with .torrent files you can attempt to download other types of content. Keep in mind that non‑movie downloads may not always work smoothly."
+    />
+    <meta name="og:site_name" content="jets_torrent" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index,follow" />
+    {{! css }}
+    <link href="dist/css/app.css" rel="stylesheet" />
+    <link href="dist/css/shell_css_anima.css" rel="stylesheet" />
+    <link href="dist/css/header.css" rel="stylesheet" />
+    <title>jets_torrent</title>
+  </head>
+  <body>
+    <div id="home">
+      {{! home-popup }}
+      <div id="hmpopup">
+        <div id="hmpopupCntnts">
+          <div id="hmpopup_top">
+            <div id="hmpopup_top_lft">ee</div>
+            <div id="hmpopup_top_rght">
+              <button id="hmpopupBclsBtn">
+                <img
+                  id="hmpopup_top_rght_clsicn"
+                  src="dist/icons/cancel.svg"
+                /></button>
+            </div>
+          </div>
+          <div id="hmpopup_bttm">
+            <span>
+              {{! <img id="ldngicn" src="dist/icons/loading_bw.svg" /> }}
+              <img id="ldngicn" src="assets/icons/loading.png" />
+            </span>
+          </div>
+        </div>
+      </div>
+      <div></div>
+      {{! banner }}
+      <div id="bannr1">
+        <div id="bannr1Cntnts">
+          <span class="bnnrsclscl">
+            <a href="mailto:fredmjr37@gmail.com" class="atagscialscl"><img
+                id="emlicn"
+                src="dist/icons/contact.svg"
+                class="bnnricons"
+              />fredmjr37@gmail.com</a>
+          </span>
+          <span class="bnnrsclscl"><img
+              id="cntntsicn"
+              src="dist/icons/email.svg"
+              class="bnnricons"
+            />
+            <a class="atagscialscl" href="tel:0975986004">+260975986004</a>
+            /
+            <a class="atagscialscl" href="tel:0760932304">+260760932304</a>
+          </span>
+        </div>
+      </div>
+      {{! promos }}
+      <div id="promo">
+        <span id="promoCntnts">
+          Sea_Shell Server Official.
+          <button id="whtsnw">See whats new</button>
+        </span>
+      </div>
+      <div id="main">
+        {{! Navbar }}
+        <div id="navbar">
+          <div id="navbar_cntnts">
+            {{! left navbar }}
+            <div id="navbr_lft">
+              <button id="shellsnvbrlgBtn">
+                <span>
+                  <img
+                    id="shellsnabrlogo"
+                    src="dist/logos/sea_shell server original logo.svg"
+                    class="app-icon"
+                  />
+                </span>
+                <span>
+                  <p id="shellsnabrwrdlogo">SEA_SHELL SERVER</p>
+                </span></button>
+            </div>
+            {{! right navbar }}
+            <div id="navbr_rght">
+              <button id="navbrsgnupBtn">Sign up for free</button>
+              <button id="navbrloginBtn">Log in</button>
+              <button id="navbrmenuBtn"><img
+                  id="navbrmenuicon"
+                  src="dist/icons/menu.svg"
+                  class="app-icon"
+                />
+                <div id="navbrmenudrpdwn">
+                  <p id="sttngsttl">
+                    <span id="sttngstxt">
+                      <img
+                        id="sttngsicn"
+                        src="dist/icons/settings.svg"
+                        alt=""
+                      />
+                      Settings
+                    </span>
+                    <span id="sttngsclsBtn">x</span></p>
+                  <div class="sttngscrd">
+                    <p>Dark mode</p>
+                    <div id="drkmdBtn">
+                      <span id="offid">off</span>
+                      <div id="mdcrcl">
+                        <img
+                          class="cirlccl"
+                          src="dist/icons/circle.svg"
+                          alt=""
+                        /></div></div>
+                  </div>
+
+                  <br />
+                  <div id="sttngsftr">
+                    <div id="sttngsftrlnks">
+                      <span>Privacy</span>
+                      .
+                      <span>Terms of use</span>
+                      .
+                      <span>Help</span>
+                      .
+                      <span>Feedback </span>
+                    </div>
+
+                    <p id="sttngsftrendnote">Be part of the digital customer
+                      community by subscribing to tatored web developement
+                      subscription projects</p>
+                  </div>
+                </div>
+              </button>
+
+            </div>
+          </div>
+        </div>
+        {{! header }}
+        <div id="header">
+          <div id="headercntnts">
+            <div id="hrdrinf">
+              <p id="intrhdrdrttl">Introducing Sea_Shell Server Data Platform</p>
+              <p id="hrdrttl1">Server Data</p>
+              <p id="hrdrttl2">Backup System</p>
+              <p id="hrdrttl3">With easy. No worries. Safe</p>
+              <br />
+              <p id="hrdrdscrptn">Sea_Shell Server is here for you and your
+                brand's digital data backups, safety and recovery. Be part of
+                the digital customer community by subscribing to tatored web
+                developement subscription projects and worry no more about your
+                digital personal, school, church, health insititutions or
+                company data.</p>
+              <br />
+              <div id="hrdr_gtstrtd_quklnks_pnl">
+                <button id="gtsrthrdrBtn">Get started</button>
+                <button id="quklnkshrdrBtn">Quick links</button>
+              </div>
+            </div>
+            <div id="hrdrthmb">
+
+              <div class="workflow-wrapper">
+                <svg
+                  class="roads-svg"
+                  viewBox="0 0 800 400"
+                  preserveAspectRatio="none"
+                >
+                  <path d="M 60,60 C 200,60 250,200 400,200" />
+                  <path d="M 60,200 L 400,200" />
+                  <path d="M 60,340 C 200,340 250,200 400,200" />
+
+                  <path d="M 740,60 C 600,60 550,200 400,200" />
+                  <path d="M 740,200 L 400,200" />
+                  <path d="M 740,340 C 600,340 550,200 400,200" />
+                </svg>
+
+                <div class="nodes-layer">
+                  <div class="app-card pos-l-top">
+                    <span>
+                      <img
+                        class="hrdrthmbicncl"
+                        src="dist/hshels_icons/cloud-storage.svg"
+                        alt=""
+                      />
+                    </span>
+                  </div>
+                  <div class="app-card pos-l-mid">
+                    <span>
+                      <img
+                        class="hrdrthmbicncl"
+                        src="dist/hshels_icons/data-analytics.svg"
+                        alt=""
+                      />
+                    </span>
+                  </div>
+                  <div class="app-card pos-l-btm">
+                    <span>
+                      <img
+                        class="hrdrthmbicncl"
+                        src="dist/hshels_icons/resources-management.svg"
+                        alt=""
+                      />
+                    </span>
+                  </div>
+
+                  <div class="hub-container">
+                    <div class="circle-outer">
+                      <div class="circle-middle">
+                        <div class="circle-inner"><span>
+                            <img
+                              id="shellshrdrlogo"
+                              src="dist/logos/sea_shell server original logo.svg"
+                              class="app-icon"
+                            />
+                          </span></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="app-card pos-r-top">
+                    <span>
+                      <img
+                        class="hrdrthmbicncl"
+                        src="dist/hshels_icons/cyber-security.svg"
+                        alt=""
+                      />
+                    </span>
+                  </div>
+                  <div class="app-card pos-r-mid">
+                    <span>
+                      <img
+                        class="hrdrthmbicncl"
+                        src="dist/hshels_icons/csr.svg"
+                        alt=""
+                      />
+                    </span>
+                  </div>
+                  <div class="app-card pos-r-btm">
+                    <span>
+                      <img
+                        class="hrdrthmbicncl"
+                        src="dist/hshels_icons/secure.svg"
+                        alt=""
+                      />
+                    </span>
+                  </div>
+                </div>
+              </div>`
+            </div>
+          </div>
+        </div>
+        <br />
+        {{! categry }}
+        <div id="catgry_pnl">
+          <div id="catgrypnl_cntnts">
+            <div id="catgrypnl_lft">
+              <span>
+                <img
+                  id="shellsctgrylogo"
+                  src="dist/logos/sea_shell server original logo.svg"
+                  alt=""
+                />
+              </span>
+              <p id="shellshrdhftrlnkslogo">SEA_SHELL SERVER</p>
+              <div id="qklnks_catgrypnl">
+                <button class="qklnks_catgrypnlCl">Company</button>
+                <button class="qklnks_catgrypnlCl">Learn</button>
+                <button class="qklnks_catgrypnlCl">Resource Center</button>
+                <button class="qklnks_catgrypnlCl">Automations</button>
+                <button class="qklnks_catgrypnlCl">Security</button>
+                <button class="qklnks_catgrypnlCl">Solutions</button>
+                <button class="qklnks_catgrypnlCl">Pricing</button>
+                <button class="qklnks_catgrypnlCl">Account Pricing</button>
+              </div>
+            </div>
+            <div id="catgrypnl_rght">
+              <a
+                href="https://www.facebook.com/share/1E54TZ5cx3oE9F58/?mibextid=qi2Omg"
+                class="scliconBtnCl"
+              ><img
+                  class="scliconCl"
+                  src="dist/icons/facebook.svg"
+                  alt=""
+                /></a>
+              <a href="https://wa.me/260975986004" class="scliconBtnCl"><img
+                  class="scliconCl"
+                  src="dist/icons/whatsapp_messenger.svg"
+                  alt=""
+                  id="a"
+                /></a>
+
+              <a href="https://wa.me/260760932304" class="scliconBtnCl"><img
+                  class="scliconCl"
+                  src="dist/icons/whatsapp_business.svg"
+                  alt=""
+                  id="a"
+                /></a>
+
+              <a
+                href="https://www.instagram.com/fred_mjr37?igsh=OGQ5ZDc2ODk2ZA=="
+                class="scliconBtnCl"
+              ><img
+                  class="scliconCl"
+                  src="dist/icons/instagram.svg"
+                  alt=""
+                /></a>
+              <a
+                href="https://zm.linkedin.com/in/fred-mjr-24473b360"
+                class="scliconBtnCl"
+              ><img
+                  class="scliconCl"
+                  src="dist/icons/linkedin.svg"
+                  alt=""
+                /></a>
+              <a
+                href="https://www.behance.net/freddiestein"
+                class="scliconBtnCl"
+              ><img class="scliconCl" src="dist/icons/behance.svg" alt="" /></a>
+
+            </div>
+          </div>
+        </div>
+        <div id="dvdrlnr">
+          <div id="dvdrlnrcntnts"></div>
+        </div>
+        {{! QUICK LINKS }}
+        <div id="qklnksPnl">
+          <div id="qklnks">
+            {{! Company }}
+            <div class="qklnkscrd">
+              <p class="lnksttl" id="company">Company
+                <button
+                  class="drpqkmenulnks"
+                  id="cmpnydrpmnuBtn"
+                >&#9660;</button></p>
+              <div id="cmpnylnks">
+                <button class="lnkscl" id="try_for_free">Try-for-free</button>
+                <button class="lnkscl" id="pricing">Pricing</button>
+                <button class="lnkscl" id="contact_sales">Contact sales</button>
+                <button class="lnkscl" id="contact_support">Contact support</button>
+                <button class="lnkscl" id="about">About us</button>
+                <button class="lnkscl" id="careers">Careers</button>
+              </div>
+            </div>
+            {{! learn }}
+            <div class="qklnkscrd" id="lrncard">
+              <p class="lnksttl" id="learn">learn
+                <button class="drpqkmenulnks" id="lrndrpmnuBtn">&#9660;</button>
+              </p>
+              <div id="lrnlnks">
+                <button class="lnkscl" id="how_to_guides">How-to-Guides</button>
+                <button class="lnkscl" id="developer_docs">Developer Docs</button>
+                <button class="lnkscl" id="help_center">Help Center</button>
+                <button class="lnkscl" id="training_webinars">Training Webinars</button>
+                <button class="lnkscl" id="demo_center">Demo Center</button>
+              </div></div>
+            {{! Resource</div> Center }}
+            <div class="qklnkscrd">
+              <p class="lnksttl" id="resource_center">Resource Center
+                <button
+                  class="drpqkmenulnks"
+                  id="rsccntrdrpmnuBtn"
+                >&#9660;</button>
+              </p>
+              <div id="rsccntrlnks">
+                <button class="lnkscl" id="case_studies">Case Studies</button>
+                <button class="lnkscl" id="blog">Blog</button>
+                <button class="lnkscl" id="security_blog">Security Blog</button>
+                <button class="lnkscl" id="product_life_cycle">Product Life
+                  Cycle</button>
+                <button class="lnkscl" id="events">Events</button>
+              </div></div>
+            {{! Automations }}
+            <div class="qklnkscrd">
+              <p class="lnksttl" id="automations">Automations
+                <button
+                  class="drpqkmenulnks"
+                  id="autmtnsdrpmnuBtn"
+                >&#9660;</button></p>
+              <div id="autmtnslnks">
+                <button class="lnkscl" id="quick_easy_bkup_mthds">Quick & easy
+                  BMs</button>
+                <button class="lnkscl" id="quick_easy_data_accsblty">Quick &
+                  easy DAs</button>
+                <button class="lnkscl" id="cloud_account">Cloud Account
+                </button>
+                <button class="lnkscl" id="automated_billing">Billing &
+                  invoicing</button>
+                <button class="lnkscl" id="subscription">Subscription Lifecycle</button>
+                <button class="lnkscl" id="automated_failover">Automated
+                  Failover</button>
+              </div></div>
+            {{! Security }}
+            <div class="qklnkscrd">
+              <p class="lnksttl" id="automations">Security
+                <button
+                  class="drpqkmenulnks"
+                  id="scrtydrpmnuBtn"
+                >&#9660;</button></p>
+              <div id="scrtylnks">
+                <button class="lnkscl" id="quick_apis">APIs</button>
+                <button class="lnkscl" id="quick_vlnltyassmnt">Vulnerability
+                  Assessment</button>
+                <button class="lnkscl" id="quick_EDR">EDR</button>
+              </div></div>
+            {{! Solutions }}
+            <div class="qklnkscrd">
+              <p class="lnksttl" id="solutions">Solutions
+                <button
+                  class="drpqkmenulnks"
+                  id="sltnsdrpmnuBtn"
+                >&#9660;</button>
+              </p>
+              <div id="sltnslnks">
+                <button class="lnkscl" id="data_integrity_authenticity">Data
+                  Integrity & Authenticity</button>
+                <button class="lnkscl" id="data_loss_prevention">Data Loss
+                  Prevention</button>
+                <button class="lnkscl" id="immutable_storage">Immutable Storage</button>
+                <button
+                  class="lnkscl"
+                  id="continuous_data_protection"
+                >Continuous Data Protection</button>
+                <button class="lnkscl" id="secure_data_migration">Secure Data
+                  Nigration</button>
+                <button class="lnkscl" id="data_sovereignty_compliance">Data
+                  Sovereignty & Compliance</button>
+                <button class="lnkscl" id="digital_forensics">Digital Forensics</button>
+              </div></div>
+            {{! Pricing }}
+            <div class="qklnkscrd">
+              <p class="lnksttl" id="pricing">Pricing
+                <button
+                  class="drpqkmenulnks"
+                  id="prcngdrpmnuBtn"
+                >&#9660;</button></p>
+              <div id="prcnglnks">
+                <button class="lnkscl" id="free_trial">Free trial</button>
+                <button class="lnkscl" id="individual">Individual</button>
+                <button class="lnkscl" id="small_scale_busimess">Small Scale
+                  Business</button>
+                <button class="lnkscl" id="standard_business company">Standard
+                  Business Company</button>
+                <button class="lnkscl" id="large_business_institutions">Large
+                  Business Institutions</button>
+                <button class="lnkscl" id="exponential_partmership">Exponential
+                  Partnership</button>
+                <button class="lnkscl" id="heavy_loaders">Heavy Loaders</button>
+                <button class="lnkscl" id="annually_subs">Annually Subs</button>
+              </div></div>
+            {{! Account Pricing }}
+            <div class="qklnkscrd">
+              <p class="lnksttl" id="account_pricing">Account Pricing
+                <button
+                  class="drpqkmenulnks"
+                  id="accnt_prcngdrpmnuBtn"
+                >&#9660;</button></p>
+              <div id="accntprcnglnks">
+                <button class="lnkscl" id="pricing_overview">Pricing Overview</button>
+                <button class="lnkscl" id="cloud_storage_cal">Cloud Storage Cal
+                  (Calculator)</button>
+                <button class="lnkscl" id="free_trial_30_days">Free Trial (30
+                  Days)</button>
+                <button class="lnkscl" id="contact_sales">Contact Sales</button>
+                <button class="lnkscl" id="msp_pricing program">MSP Pricing
+                  Program</button>
+                <button class="lnkscl" id="small_business">Small Business
+                  Pricing</button>
+                <button class="lnkscl" id="renewal">Renewal & Upgrade Portal</button>
+                <button class="lnkscl" id="licensing_faq">Licensing FAQ</button>
+              </div></div>
+          </div>
+        </div>
+
+        {{! space adder below links, above footer }}
+        <div id="brspcr"></div>
+
+      </div>
+      {{! footer }}
+      <div id="bannr2">
+        {{! left }}
+        <div id="ftr_logo">
+          <span>
+            <img
+              id="shellsftrlogo"
+              src="dist/logos/sea_shell server original logo.svg"
+              class="app-icon"
+            />
+          </span>
+          {{! <span>
+            <img
+              id="shellsftrwrdlogo"
+              src="dist/logos/sea_shell server word logo.svg"
+              class="app-icon"
+            />
+          </span> }}
+          <p id="shellsftrendlogo">SEA_SHELL SERVER</p>
+          {{! <span>JETS_TORRENT</span> }}
+        </div>
+
+        {{! right }}
+        <div id="rght_endnote">
+          <span id="prvcyBtn">Privacy</span>
+          <span id="trmsBtn">Terms</span>
+        </div>
+      </div>
+    </div>
+
+    <script src="src/js/app.js"></script>
+    <script src="src/js/anima.js"></script>
+
+    <script src="src/js/header.js"></script>
+  </body>
+</html>

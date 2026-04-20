@@ -1,0 +1,22 @@
+/* animation for text logo */
+@keyframes typing-loop {
+  0% {
+    width: 0ch;
+  }
+  22% {
+    width: 16ch;
+  }
+  100% {
+    width: 16ch;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: currentColor;
+  }
+}
